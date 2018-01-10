@@ -1,1 +1,1 @@
-'Brief notes about what I know about knockoutJs' 
+'Brief notes about what I know about Oracle JET' 

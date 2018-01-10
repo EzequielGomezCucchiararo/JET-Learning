@@ -16,6 +16,7 @@ self.bestStundent = {
     name: 'Tim',
     class: 'Spanish'
 };
+self.availableTeachers = []
 ```
 
 ##### HTML:
@@ -29,8 +30,8 @@ self.bestStundent = {
 
 <!-- For each -->
 <div data-bind="foreach: students">
-    <p data-bind="name"></p>
-    <p data-bind="class"></p>
+    <p data-bind="$data.name"></p>
+    <p data-bind="$data.class"></p>
 </div>
 
 <!-- If bindind -->
@@ -51,4 +52,6 @@ self.bestStundent = {
 <!-- Click binding (where addStudent is a function) -->
 <button data-bind="click: addStundent">Add a student</button>
 
+<!-- select binding -->
+<td><select data-bind="options: $root.availableTeachers, value: teacher"></select></td> 
 ```
